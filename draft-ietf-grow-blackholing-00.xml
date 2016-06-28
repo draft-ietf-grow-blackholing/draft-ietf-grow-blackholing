@@ -28,19 +28,6 @@
             </address>
         </author>
 
-        <author fullname="Christoph Dietzel" initials="C." surname="Dietzel">
-            <organization>DE-CIX Management GmbH</organization>
-            <address>
-                <postal>
-                    <street>Lichtstrasse 43i</street>
-                    <city>Cologne</city>
-                    <code>50825</code>
-                    <country>Germany</country>
-                </postal>
-                <email>christoph.dietzel@de-cix.net</email>
-            </address>
-        </author>
-
         <author fullname="Job Snijders" initials="J." surname="Snijders">
                <organization abbrev="NTT">NTT Communications, Inc.</organization>
                <address>
@@ -85,11 +72,10 @@
         <abstract>
             <t>
                 This document describes the use of a well-known Border Gateway
-                Protocol (BGP) community for blackholing at IP networks and
-                Internet Exchange Points (IXP). This well-known advisory
-                transitive BGP community, namely BLACKHOLE, allows an origin AS
-                to specify that a neighboring IP network or IXP should
-                blackhole a specific IP prefix.
+                Protocol (BGP) community for blackholing in IP networks. This
+                well-known advisory transitive BGP community, namely BLACKHOLE,
+                allows an origin AS to specify that a neighboring IP network
+                should blackhole a specific IP prefix.
             </t>
         </abstract>
 
@@ -111,51 +97,52 @@
     <middle>
         <section anchor="intro" title="Introduction">
             <t>
-                The network infrastructure has been getting hammered by DDoS
+                Network infrastructures ahve been getting hammered by DDoS
                 attacks for years. In order to block DDoS attacks, IP networks
-                have offered BGP blackholing to neighboring networks
-                (<xref target=" RFC3882">iBGP scenarios</xref> and
-                <xref target="RFC5635">RTBH filtering</xref>), much like some
-                IXPs have recently started to do. 
+                have offered BGP blackholing to neighboring networks via
+                various mechanisms (<xref target=" RFC3882">iBGP
+                scenarios</xref> and <xref target="RFC5635">RTBH filtering</xref>).
             </t>
 
             <t>
                 DDoS attacks targeting a certain IP network may cause
                 congestion of links used to connect to other networks. In order
                 to limit the impact of such a scenario on legitimate traffic,
-                IP networks and IXPs adopted a mechanism
-                called BGP blackholing. A network that wants to trigger
-                blackholing needs to understand the triggering mechanism
-                adopted by its neighboring IP networks and IXPs. Different IP
-                networks and IXPs provide different BGP mechanisms to trigger
-                blackholing, including pre-defined blackhole next- hop IP
-                addresses and pre-defined BGP communities.
+                networks adopted a mechanism called BGP blackholing. A network
+                that wants to trigger blackholing needs to understand the
+                triggering mechanism adopted by its neighboring networks.
+                Different networks provide different mechanisms to trigger
+                blackholing, including but not limited to pre-defined blackhole
+                next-hop IP addresses, specific BGP communities or via an
+                out-of-band BGP session with a special BGP speaker.
             </t>
 
             <t>
-                Having several different mechanisms to trigger blackholing at
-                different IP networks and IXPs makes it an unnecessarily
-                complex, error-prone and cumbersome task for network operators.
-                Therefore a well-known <xref target="RFC1997">BGP community</xref> is defined for operational ease.
+                Having several different mechanisms to trigger blackholing in
+                different networks makes it an unnecessarily complex,
+                error-prone and cumbersome task for network operators.
+                Therefore a well-known <xref target="RFC1997">BGP
+                community</xref> is defined for operational ease.
             </t>
 
             <t>
-                Having such a well-known BGP community for blackholing
-                also supports IP networks and IXPs because
+                Having such a well-known BGP community for blackholing also
+                supports networks because:
                 <list style='symbols'>
-                    <t> implementing and monitoring blackholing gets easier if implementation
-                        and operational guides do not cover many options that trigger blackholing
+                    <t> implementing and monitoring blackholing becomes easier
+                        when implementation and operational guides do not cover
+                        many options that trigger blackholing.
                     </t>
-                    <t> the number of support requests from customers about how to trigger
-                        blackholing at a particular IP network or IXP will be reduced as the mechanism is
-                        unified
+                    <t> the number of support requests from customers about how
+                        to trigger blackholing at a particular IP network or
+                        IXP will be reduced as the mechanism is unified.
                     </t>
                 </list>
             </t>
 
             <t>
-                Making it considerably easier for network operators to utilize blackholing makes operations
-                easier.
+                Making it considerably easier for network operators to utilize
+                blackholing makes operations easier.
             </t>
         </section>
 
@@ -175,12 +162,12 @@
         <section anchor="recommendation" title="Operational Recommendations">
             <section anchor="morespecific" title="IP Prefix Announcements with BLACKHOLE Community Attached">
                 <t>
-                    When an IP network is under DDoS duress, it MAY announce an
-                    IP prefix covering the victim's IP address(es) for the
-                    purpose of signaling to neighboring IP networks or IXPs
-                    that any traffic destined for these IP address(es) should
-                    be discarded. In such a scenario, the network operator
-                    SHOULD attach BLACKHOLE BGP community.
+                    When a network is under DDoS duress, it MAY announce an IP
+                    prefix covering the victim's IP address(es) for the purpose
+                    of signaling to neighboring networks that any traffic
+                    destined for these IP address(es) should be discarded. In
+                    such a scenario, the network operator SHOULD attach
+                    BLACKHOLE BGP community.
                 </t>
             </section>
             <section anchor="scope" title="Local Scope of Blackholes">
@@ -263,10 +250,9 @@
                 The unauthorized addition of the BLACKHOLE BGP community to an
                 IP prefix by a forwarding agent may cause a denial of service
                 attack based on denial of reachability. The denial of service
-                will happen if an IP network or IXP offering blackholing is
-                traversed.  However, denial of service attack vectors to BGP
-                are not new as the injection of false routing 
-                information is already possible.
+                will happen if a network offering blackholing is traversed.
+                However, denial of service attack vectors to BGP are not new as
+                the injection of false routing information is already possible.
             </t>
 
             <t>
@@ -300,7 +286,6 @@
         </references>
 
         <references title="Informative References">
-           <?rfc include="reference.I-D.ietf-idr-ix-bgp-route-server"?>
            <?rfc include="reference.RFC.3882"?>
            <?rfc include="reference.RFC.5635"?>
            <?rfc include="reference.RFC.6810"?>
@@ -309,13 +294,12 @@
         </references>
         
         <section anchor="acknowledgements" title="Acknowledgements">
-            <t>The authors gratefully acknowledges the contributions of:
-                <list style='symbols'>
-                    <t>Petr Jiran, NIX.CZ, Milesovska 1136/5, Praha 130 00, Czech Republic, Email: pj@nix.cz</t>
-                    <t>Yordan Kritski, NetIX Ltd., 3 Grigorii Gorbatenko Str., Sofia 1784, Bulgaria, Email: 
-                        ykritski@netix.net</t>
-                    <t>Christian Seitz, STRATO AG, Pascalstr. 10, Berlin 10587, Germany, Email: seitz@strato.de</t>
-                </list>
+            <t>
+                The authors would like to gratefully acknowledge many people
+                who have contributed discussions and ideas to the making of
+                this proposal. They include Petr Jiran, Yordan Kritski,
+                Christian Seitz, Nick Hilliard, Joel Jaeggli, Christopher
+                Morrow, Thomas Mangin, Will Hargrave and Niels Bakker.
             </t>
         </section>
     </back>
