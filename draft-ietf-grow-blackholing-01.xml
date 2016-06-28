@@ -74,7 +74,7 @@
                 This document describes the use of a well-known Border Gateway
                 Protocol (BGP) community for blackholing in IP networks. This
                 well-known advisory transitive BGP community, namely BLACKHOLE,
-                allows an origin AS to specify that a neighboring IP network
+                allows an origin AS to specify that a neighboring network
                 should blackhole a specific IP prefix.
             </t>
         </abstract>
@@ -105,7 +105,7 @@
             </t>
 
             <t>
-                DDoS attacks targeting a certain IP network may cause
+                DDoS attacks targeting a certain IP address may cause
                 congestion of links used to connect to other networks. In order
                 to limit the impact of such a scenario on legitimate traffic,
                 networks adopted a mechanism called BGP blackholing. A network
@@ -220,7 +220,7 @@
                 </list>
             </t>
             <t>
-                The low-order two octets in decimal are 666, amongst IP network
+                The low-order two octets in decimal are 666, amongst network
                 operators a value commonly associated with BGP blackholing.
             </t>
         </section>
