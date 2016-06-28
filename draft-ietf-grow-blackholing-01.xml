@@ -97,10 +97,10 @@
     <middle>
         <section anchor="intro" title="Introduction">
             <t>
-                Network infrastructures ahve been getting hammered by DDoS
-                attacks for years. In order to block DDoS attacks, IP networks
-                have offered BGP blackholing to neighboring networks via
-                various mechanisms such as described in
+                Network infrastructures have been increasingly hampered by DDoS
+                attacks. In order to dampen the effects of these DDoS attacks,
+                IP networks have offered BGP blackholing to neighboring
+                networks via various mechanisms such as described in
                 <xref target=" RFC3882" /> and <xref target="RFC5635" />.
             </t>
 
