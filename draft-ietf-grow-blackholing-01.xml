@@ -11,7 +11,7 @@
 <?rfc tocindent="yes"?>
 <?rfc tocompact="yes"?>
 
-<rfc category="std" docName="draft-ietf-grow-blackholing-00">
+<rfc category="std" docName="draft-ietf-grow-blackholing-01">
     <front>
         <title>BLACKHOLE BGP Community for Blackholing</title>
         
