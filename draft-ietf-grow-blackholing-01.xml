@@ -134,8 +134,9 @@
                         many options that trigger blackholing.
                     </t>
                     <t> the number of support requests from customers about how
-                        to trigger blackholing at a particular IP network or
-                        IXP will be reduced as the mechanism is unified.
+                        to trigger blackholing in a particular neighboring
+                        network will be reduced as the codepoint for common
+                        blackholing mechanisms is unified.
                     </t>
                 </list>
             </t>
