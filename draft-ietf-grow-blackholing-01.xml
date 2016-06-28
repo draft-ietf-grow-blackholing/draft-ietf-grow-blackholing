@@ -28,6 +28,19 @@
             </address>
         </author>
 
+        <author fullname="Christoph Dietzel" initials="C." surname="Dietzel">
+            <organization>DE-CIX Management GmbH</organization>
+            <address>
+                <postal>
+                    <street>Lichtstrasse 43i</street>
+                    <city>Cologne</city>
+                    <code>50825</code>
+                    <country>Germany</country>
+                </postal>
+                <email>christoph.dietzel@de-cix.net</email>
+            </address>
+        </author>
+
         <author fullname="Job Snijders" initials="J." surname="Snijders">
                <organization abbrev="NTT">NTT Communications, Inc.</organization>
                <address>
