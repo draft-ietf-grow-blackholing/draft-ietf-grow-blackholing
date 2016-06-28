@@ -269,10 +269,10 @@
                 The presence of this BLACKHOLE BGP community may introduce a
                 resource exhaustion attack to BGP speakers. If a BGP speaker
                 receives many IP prefixes containing the BLACKHOLE BGP
-                community, its internal resources such as CPU power and/or
-                memory might get consumed, especially if usual prefix sanity
+                community, its internal resources such as CPU power, memory or
+                FIB capacity might exhaust, especially if usual prefix sanity
                 checks (e.g. such as IP prefix length or number of prefixes)
-                are  disabled (see <xref target="small" />).
+                are disabled (see <xref target="small" />).
             </t>
         </section>
 
