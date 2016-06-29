@@ -11,7 +11,7 @@
 <?rfc tocindent="yes"?>
 <?rfc tocompact="yes"?>
 
-<rfc category="std" docName="draft-ietf-grow-blackholing-01">
+<rfc category="std" docName="draft-ietf-grow-blackholing-02">
     <front>
         <title>BLACKHOLE BGP Community for Blackholing</title>
         
@@ -85,10 +85,11 @@
         <abstract>
             <t>
                 This document describes the use of a well-known Border Gateway
-                Protocol (BGP) community for blackholing in IP networks. This
-                well-known advisory transitive BGP community, namely BLACKHOLE,
-                allows an origin AS to specify that a neighboring network
-                should blackhole a specific IP prefix.
+                Protocol (BGP) community for destination based blackholing in
+                IP networks. This well-known advisory transitive BGP community,
+                namely BLACKHOLE, allows an origin AS to specify that a
+                neighboring network should discard any traffic destined towards
+                the tagged IP prefix.
             </t>
         </abstract>
 
