@@ -201,26 +201,6 @@
                     the local routing domain.
                 </t>
             </section>
-
-            <section anchor="vendor" title="Vendor Implementation Recommendations">
-                <t>
-                    Without an explicit configuration directive set by the
-                    operator, network elements SHOULD NOT discard traffic
-                    destined towards IP Prefixes which are tagged with the
-                    BLACKHOLE BGP community. The operator is expected to
-                    explicitly configure the network element to honor the
-                    BLACKHOLE BGP community in a way that is compliant with the
-                    operator's routing policy.
-                </t>
-                <t>
-                    Vendors MAY provide a short-hand keyword in their
-                    configuration language to reference the Well-known
-                    BLACKHOLE BGP community attribute value. The suggested
-                    string to be used is "blackhole".
-                </t>
-            </section>
-
-
             <section anchor="small" title="Accepting Blackholed IP Prefixes">
                 <t>
                     It has been observed that announcements of IP prefixes
@@ -240,7 +220,24 @@
                     network is authorized to advertise.
                 </t>
             </section>
-
+        </section>
+        
+        <section anchor="vendor" title="Vendor Implementation Recommendations">
+            <t>
+                Without an explicit configuration directive set by the
+                operator, network elements SHOULD NOT discard traffic
+                destined towards IP Prefixes which are tagged with the
+                BLACKHOLE BGP community. The operator is expected to
+                explicitly configure the network element to honor the
+                BLACKHOLE BGP community in a way that is compliant with the
+                operator's routing policy.
+            </t>
+            <t>
+                Vendors MAY provide a short-hand keyword in their
+                configuration language to reference the Well-known
+                BLACKHOLE BGP community attribute value. The suggested
+                string to be used is "blackhole".
+            </t>
         </section>
 
         <section anchor="iana" title="IANA Considerations">
