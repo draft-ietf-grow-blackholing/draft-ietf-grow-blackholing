@@ -11,7 +11,7 @@
 <?rfc tocindent="yes"?>
 <?rfc tocompact="yes"?>
 
-<rfc category="std" docName="draft-ietf-grow-blackholing-02">
+<rfc category="info" docName="draft-ietf-grow-blackholing-02">
     <front>
         <title>BLACKHOLE BGP Community for Blackholing</title>
         
@@ -333,7 +333,8 @@
                 who have contributed discussions and ideas to the making of
                 this proposal. They include Petr Jiran, Yordan Kritski,
                 Christian Seitz, Nick Hilliard, Joel Jaeggli, Christopher
-                Morrow, Thomas Mangin, Will Hargrave and Niels Bakker.
+                Morrow, Thomas Mangin, Will Hargrave, Niels Bakker and David
+                Farmer.
             </t>
         </section>
     </back>
