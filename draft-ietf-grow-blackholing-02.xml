@@ -263,32 +263,19 @@
                 BGP contains no specific mechanism to prevent the unauthorized
                 modification of information by the forwarding agent. This
                 allows routing information to be modified, removed, or false
-                information to be added by forwarding agents.  Recipients of
+                information to be added by forwarding agents. Recipients of
                 routing information are not able to detect this modification.
-                Also, <xref target="RFC6810">RPKI</xref> and
-                <xref target="I-D.ietf-sidr-bgpsec-overview">BGPSec</xref> do
-                not fully resolve this situation. For instance, BGP communities
+                Also, <xref target="RFC6810">RPKI</xref> and <xref
+                    target="I-D.ietf-sidr-bgpsec-overview">BGPSec</xref> do not
+                fully resolve this situation. For instance, BGP communities
                 can still be added or altered by a forwarding agent even if
-                RPKI and BGPSec are in place.
-            </t>
-            <t>
-                The BLACKHOLE BGP community does not alter this situation.
-            </t>
-
-            <t>
-                A new additional attack vector is introduced into BGP by using
-                the BLACKHOLE BGP community: denial of service attacks for IP
-                prefixes.<!--Elaborate on the possible danger of -->
+                RPKI and BGPSec are in place. 
             </t>
             <t>
                 The unauthorized addition of the BLACKHOLE BGP community to an
-                IP prefix by a forwarding agent may cause a denial of service
-                attack based on denial of reachability. The denial of service
-                will happen if a network offering blackholing is traversed.
-                However, denial of service attack vectors to BGP are not new as
-                the injection of false routing information is already possible.
+                IP prefix by an adversery may cause a denial of service attack
+                based on denial of reachability.
             </t>
-
             <t>
                 In order to further limit the impact of unauthorized BGP
                 announcements carrying the BLACKHOLE BGP community, the
@@ -296,16 +283,6 @@
                 filtering (see <xref target="RFC7454">section 6.2.1.1.2.</xref>)
                 that the peer announcing the prefix is authorized to do so. If
                 not, the BGP announcement should be filtered out.
-            </t>
-            
-            <t>
-                The presence of this BLACKHOLE BGP community may introduce a
-                resource exhaustion attack to BGP speakers. If a BGP speaker
-                receives many IP prefixes containing the BLACKHOLE BGP
-                community, its internal resources such as CPU power, memory or
-                FIB capacity might exhaust, especially if usual prefix sanity
-                checks (e.g. such as IP prefix length or number of prefixes)
-                are disabled (see <xref target="small" />).
             </t>
         </section>
 
