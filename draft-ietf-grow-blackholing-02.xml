@@ -202,6 +202,25 @@
                 </t>
             </section>
 
+            <section anchor="vendor" title="Vendor Implementation Recommendations">
+                <t>
+                    Without an explicit configuration directive set by the
+                    operator, network elements SHOULD NOT discard traffic
+                    destined towards IP Prefixes which are tagged with the
+                    BLACKHOLE BGP Community. The operator is expected to
+                    explicitly configure the network element to honor the
+                    BLACKHOLE BGP Community in a way that is compliant with the
+                    operator's routing policy.
+                </t>
+                <t>
+                    Vendors MAY provide a short-hand keyword in their
+                    configuration language to reference the Well-known
+                    BLACKHOLE BGP Community value. The suggested string to be
+                    used is "blackhole".
+                </t>
+            </section>
+
+
             <section anchor="small" title="Accepting Blackholed IP Prefixes">
                 <t>
                     It has been observed that announcements of IP prefixes
