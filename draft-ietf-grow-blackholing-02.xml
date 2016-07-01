@@ -270,7 +270,7 @@
             </t>
             <t>
                 The unauthorized addition of the BLACKHOLE BGP community to an
-                IP prefix by an adversery may cause a denial of service attack
+                IP prefix by an adversary may cause a denial of service attack
                 based on denial of reachability.
             </t>
             <t>
@@ -307,8 +307,8 @@
                 who have contributed discussions and ideas to the making of
                 this proposal. They include Petr Jiran, Yordan Kritski,
                 Christian Seitz, Nick Hilliard, Joel Jaeggli, Christopher
-                Morrow, Thomas Mangin, Will Hargrave, Niels Bakker and David
-                Farmer.
+                Morrow, Thomas Mangin, Will Hargrave, Niels Bakker, David
+                Farmer and Jared Mauch.
             </t>
         </section>
     </back>
