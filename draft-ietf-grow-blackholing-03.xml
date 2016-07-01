@@ -233,7 +233,7 @@
                 operator's routing policy.
             </t>
             <t>
-                Vendors MAY provide a short-hand keyword in their
+                Vendors MAY provide a shorthand keyword in their
                 configuration language to reference the well-known
                 BLACKHOLE BGP community attribute value. The suggested
                 string to be used is "blackhole".
