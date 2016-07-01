@@ -181,7 +181,7 @@
                     prefix covering the victim's IP address(es) for the purpose
                     of signaling to neighboring networks that any traffic
                     destined for these IP address(es) should be discarded. In
-                    such a scenario, the network operator SHOULD attach
+                    such a scenario, the network operator SHOULD attach the
                     BLACKHOLE BGP community.
                 </t>
             </section>
