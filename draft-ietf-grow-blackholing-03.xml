@@ -161,14 +161,14 @@
             </t>
         </section>
 
-        <section anchor="attribute" title="BLACKHOLE Attribute">
+        <section anchor="community" title="BLACKHOLE Community">
             <t>
                 This document defines the use of a new well-known BGP transitive community,
                    BLACKHOLE.
                </t>
 
                <t>
-                   The semantics of this attribute allow a network to interpret
+                   The semantics of this community allow a network to interpret
                    the presence of this community as an advisory qualification to drop
                    any traffic being sent towards this prefix.
                </t>
@@ -242,7 +242,8 @@
 
         <section anchor="iana" title="IANA Considerations">
             <t>
-                The IANA is requested to register BLACKHOLE as a well-known BGP community with global significance:
+                The IANA is requested to register BLACKHOLE as a well-known
+                BGP community with global significance:
                 <list>
                     <t>
                         BLACKHOLE (= 0xFFFF029A)
@@ -250,8 +251,8 @@
                 </list>
             </t>
             <t>
-                The low-order two octets in decimal are 666, amongst network
-                operators a value commonly associated with BGP blackholing.
+                The low-order two octets in decimal are 666, a value commonly
+                associated with BGP blackholing among network operators.
             </t>
         </section>
 
@@ -263,7 +264,7 @@
                 information to be added by forwarding agents. Recipients of
                 routing information are not able to detect this modification.
                 Also, <xref target="RFC6810">RPKI</xref> and <xref
-                    target="I-D.ietf-sidr-bgpsec-overview">BGPSec</xref> do not
+                    target="I-D.ietf-sidr-bgpsec-protocol">BGPSec</xref> do not
                 fully resolve this situation. For instance, BGP communities
                 can still be added or altered by a forwarding agent even if
                 RPKI and BGPSec are in place. 
@@ -277,9 +278,16 @@
                 In order to further limit the impact of unauthorized BGP
                 announcements carrying the BLACKHOLE BGP community, the
                 receiving BGP speaker SHOULD verify by applying strict
-                filtering (see <xref target="RFC7454">section 6.2.1.1.2.</xref>)
+                filtering (see <xref target="RFC7454">section 6.2.1.1.2</xref>)
                 that the peer announcing the prefix is authorized to do so. If
-                not, the BGP announcement should be filtered out.
+                not, the BGP announcement should be filtered.
+            </t>
+            <t>
+                BGP announcements carrying the BLACKHOLE community
+                should only be accepted and honored, if the neighboring
+                network is authorized to advertise the prefix. <xref
+                target="RFC6811">RFC6811</xref> describes a mechanism for
+                BGP to validate the origin of a prefix.
             </t>
         </section>
 
@@ -296,9 +304,10 @@
         <references title="Informative References">
            <?rfc include="reference.RFC.3882"?>
            <?rfc include="reference.RFC.5635"?>
-           <?rfc include="reference.RFC.6810"?>
+           <?rfc include="reference.RFC.6811"?>
            <?rfc include="reference.RFC.7454"?>
            <?rfc include="reference.I-D.ietf-sidr-bgpsec-overview"?>
+           <?rfc include="reference.I-D.ietf-sidr-bgpsec-protocol"?>
         </references>
         
         <section anchor="acknowledgements" title="Acknowledgements">
