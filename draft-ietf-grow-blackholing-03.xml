@@ -141,16 +141,16 @@
 
             <t>
                 Having such a well-known BGP community for blackholing also
-                simplifies network operations because:
+                further simplifies network operations because:
                 <list style='symbols'>
                     <t>Implementing and monitoring blackholing becomes easier
-                       when implementation and operational guides do not cover
+                       when implementation, and operational guides do not cover
                        many options that trigger blackholing.
                     </t>
                     <t>The number of support requests from customers about how
                        to trigger blackholing in a particular neighboring
                        network will be reduced as the codepoint for common
-                       blackholing mechanisms is unified.
+                       blackholing mechanisms is unified and well-known.
                     </t>
                 </list>
             </t>
