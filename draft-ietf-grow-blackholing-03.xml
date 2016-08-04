@@ -211,7 +211,6 @@
             </section>
             <section anchor="small" title="Accepting Blackholed IP Prefixes">
                 <t>
-
                     It has been observed in provider networks running BGP
                     that announcements of IP prefixes longer than /24
                     for IPv4 and /48 for IPv6 are usually not accepted
@@ -222,7 +221,6 @@
                     under DDoS duress. Typically, the blackhole route's
                     prefix length is as specific as /32 for IPv4 and /128
                     for IPv6.
-
                 </t>
                 <t>
                     BGP speakers SHOULD only accept and honor BGP announcements
