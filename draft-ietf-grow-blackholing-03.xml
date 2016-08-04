@@ -196,9 +196,10 @@
                 <t>
                     Unintentional leaking of more specific IP prefixes to
                     neighboring networks can have adverse effects. Extreme
-                    caution should be used when purposefully propagating IP
-                    prefixes tagged with the BLACKHOLE BGP community outside
-                    the local routing domain.
+                    caution should be used when purposefully propagating
+                    IP prefixes tagged with the BLACKHOLE BGP community
+                    outside the local routing domain, unless policy
+                    explicitly aims at doing just that.
                 </t>
             </section>
             <section anchor="small" title="Accepting Blackholed IP Prefixes">
