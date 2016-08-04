@@ -85,7 +85,7 @@
         <abstract>
             <t>
                 This document describes the use of a well-known Border Gateway
-                Protocol (BGP) community for destination based blackholing in
+                Protocol (BGP) community for destination-based blackholing in
                 IP networks. This well-known advisory transitive BGP community,
                 namely BLACKHOLE, allows an origin AS to specify that a
                 neighboring network should discard any traffic destined towards
@@ -141,16 +141,16 @@
 
             <t>
                 Having such a well-known BGP community for blackholing also
-                supports networks because:
+                simplifies network operations because:
                 <list style='symbols'>
-                    <t> implementing and monitoring blackholing becomes easier
-                        when implementation and operational guides do not cover
-                        many options that trigger blackholing.
+                    <t>Implementing and monitoring blackholing becomes easier
+                       when implementation and operational guides do not cover
+                       many options that trigger blackholing.
                     </t>
-                    <t> the number of support requests from customers about how
-                        to trigger blackholing in a particular neighboring
-                        network will be reduced as the codepoint for common
-                        blackholing mechanisms is unified.
+                    <t>The number of support requests from customers about how
+                       to trigger blackholing in a particular neighboring
+                       network will be reduced as the codepoint for common
+                       blackholing mechanisms is unified.
                     </t>
                 </list>
             </t>
@@ -163,8 +163,8 @@
 
         <section anchor="community" title="BLACKHOLE Community">
             <t>
-                This document defines the use of a new well-known BGP transitive community,
-                   BLACKHOLE.
+                This document defines the use of a new well-known BGP
+                transitive community, BLACKHOLE.
                </t>
 
                <t>
