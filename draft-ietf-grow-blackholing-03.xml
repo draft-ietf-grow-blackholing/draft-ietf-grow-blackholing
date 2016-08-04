@@ -96,12 +96,12 @@
         <note title="Requirements Language">
 
             <t>
-                The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
-                NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and
-                "OPTIONAL" are to be interpreted as described in <xref target="RFC2119" />
-                only when they appear in all upper case. They may also appear
-                in lower or mixed case as English words, without normative
-                meaning.
+                The key words "MUST", "MUST NOT", "REQUIRED", "SHALL",
+                "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",
+                "MAY", and "OPTIONAL" are to be interpreted as described
+                in <xref target="RFC2119"/> only when they appear in all
+                upper case. They may also appear in lower or mixed case
+                as English words, without normative meaning.
             </t>
 
         </note>
@@ -115,7 +115,7 @@
                 attacks. In order to dampen the effects of these DDoS attacks,
                 IP networks have offered BGP blackholing to neighboring
                 networks via various mechanisms such as described in
-                <xref target=" RFC3882" /> and <xref target="RFC5635" />.
+                <xref target="RFC3882"/> and <xref target="RFC5635"/>.
             </t>
 
             <t>
@@ -286,7 +286,7 @@
                 BGP announcements carrying the BLACKHOLE community
                 should only be accepted and honored, if the neighboring
                 network is authorized to advertise the prefix. <xref
-                target="RFC6811">RFC6811</xref> describes a mechanism for
+                target="RFC6811"/> describes a mechanism for
                 BGP to validate the origin of a prefix.
             </t>
         </section>
@@ -304,9 +304,9 @@
         <references title="Informative References">
            <?rfc include="reference.RFC.3882"?>
            <?rfc include="reference.RFC.5635"?>
+           <?rfc include="reference.RFC.6810"?>
            <?rfc include="reference.RFC.6811"?>
            <?rfc include="reference.RFC.7454"?>
-           <?rfc include="reference.I-D.ietf-sidr-bgpsec-overview"?>
            <?rfc include="reference.I-D.ietf-sidr-bgpsec-protocol"?>
         </references>
         
