@@ -195,7 +195,7 @@
                     with the BLACKHOLE community SHOULD add the
                     NO_ADVERTISE or NO_EXPORT community as defined in
                     <xref target="RFC1997"/>, or a similar community to
-                    prevent propagation of the route outside the local AS.
+                    prevent propagation of the prefix outside the local AS.
                     The community to prevent propagation SHOULD be chosen
                     according to the operator's routing policy.
                 </t>
@@ -215,12 +215,11 @@
                     that announcements of IP prefixes longer than /24
                     for IPv4 and /48 for IPv6 are usually not accepted
                     on the Internet (see <xref target="RFC7454">section
-                    6.1.3</xref>). However, blackhole routes should be
-                    as small as possible in order to limit the impact of
-                    discarding traffic for adjacent IP space that is not
-                    under DDoS duress. Typically, the blackhole route's
-                    prefix length is as specific as /32 for IPv4 and /128
-                    for IPv6.
+                    6.1.3</xref>). However, blackhole prefix length should
+                    be as long as possible in order to limit the impact
+                    of discarding traffic for adjacent IP space that is
+                    not under DDoS duress. Typically, the blackhole prefix
+                    length is as specific as /32 for IPv4 and /128 for IPv6.
                 </t>
                 <t>
                     BGP speakers SHOULD only accept and honor BGP announcements
