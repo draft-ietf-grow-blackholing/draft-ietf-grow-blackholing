@@ -306,11 +306,10 @@
                 not, the BGP announcement should be filtered.
             </t>
             <t>
-                BGP announcements carrying the BLACKHOLE community
-                should only be accepted and honored, if the neighboring
-                network is authorized to advertise the prefix. <xref
-                target="RFC6811"/> describes a mechanism for
-                BGP to validate the origin of a prefix.
+                BGP announcements carrying the BLACKHOLE community should
+                only be accepted, if the neighboring network is authorized to
+                advertise the prefix.  The method of validating announcements
+                SHOULD be chosen according to the operator's routing policy.
             </t>
         </section>
 
@@ -331,7 +330,6 @@
            <?rfc include="reference.RFC.5575"?>
            <?rfc include="reference.RFC.5635"?>
            <?rfc include="reference.RFC.6810"?>
-           <?rfc include="reference.RFC.6811"?>
            <?rfc include="reference.RFC.7454"?>
            <?rfc include="reference.I-D.ietf-sidr-bgpsec-protocol"?>
         </references>
