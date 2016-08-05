@@ -136,7 +136,7 @@
                 Having several different mechanisms to trigger blackholing in
                 different networks makes it an unnecessarily complex,
                 error-prone and cumbersome task for network operators.
-                Therefore a well-known <xref target="RFC1997">BGP
+                Therefore, a well-known <xref target="RFC1997">BGP
                 community</xref> is defined for operational ease.
             </t>
 
