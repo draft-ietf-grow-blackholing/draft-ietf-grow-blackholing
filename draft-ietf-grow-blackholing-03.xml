@@ -184,8 +184,8 @@
                     that any traffic destined for these IP address(es)
                     should be discarded. In such a scenario, the network
                     operator SHOULD attach the BLACKHOLE BGP community.
-                    This community community MAY be used in all bilateral
-                    and multilateral BGP deployment scenarios.
+                    This community MAY be used in all bilateral and
+                    multilateral BGP deployment scenarios.
                 </t>
             </section>
             <section anchor="scope" title="Local Scope of Blackholes">
