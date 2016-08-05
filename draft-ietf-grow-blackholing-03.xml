@@ -187,6 +187,11 @@
                     This community MAY be used in all bilateral and
                     multilateral BGP deployment scenarios.
                 </t>
+                <t>
+                    The BLACKHOLE community MAY also be used as one of
+                    the trigger communities in a <xref target="RFC5635"/>
+                    destination-based RTBH configuration.
+                </t>
             </section>
             <section anchor="scope" title="Local Scope of Blackholes">
                 <t>
@@ -198,7 +203,6 @@
                     The community to prevent propagation SHOULD be chosen
                     according to the operator's routing policy.
                 </t>
-
                 <t>
                     Unintentional leaking of more specific IP prefixes to
                     neighboring networks can have adverse effects. Extreme
