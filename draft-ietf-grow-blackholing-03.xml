@@ -326,6 +326,11 @@
                 validating announcements is to be chosen according to
                 the operator's routing policy.
             </t>
+            <t>
+                It is RECOMMENDED that operators use best common practices
+                to protect their BGP sessions, such as the ones in <xref
+                target="RFC7454"/>.
+            </t>
         </section>
 
         
