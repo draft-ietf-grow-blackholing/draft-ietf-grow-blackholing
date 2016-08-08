@@ -179,7 +179,7 @@
             <section anchor="morespecific" title="IP Prefix Announcements with BLACKHOLE Community Attached">
                 <t>
                     Accepting and honoring the BLACKHOLE community,
-                    or ignoring it, is a choice that is left to each
+                    or ignoring it, is a choice that is made by each
                     operator. This community MAY be used in all bilateral
                     and multilateral BGP deployment scenarios. In a bilateral
                     peering relationship, use of the BLACKHOLE community MUST
