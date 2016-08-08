@@ -323,7 +323,7 @@
                 BGP announcements carrying the BLACKHOLE community should
                 only be accepted and honored, if the neighboring network
                 is authorized to advertise the prefix.  The method of
-                validating announcements SHOULD be chosen according to
+                validating announcements is to be chosen according to
                 the operator's routing policy.
             </t>
         </section>
