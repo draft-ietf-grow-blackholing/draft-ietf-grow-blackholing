@@ -178,14 +178,25 @@
         <section anchor="recommendation" title="Operational Recommendations">
             <section anchor="morespecific" title="IP Prefix Announcements with BLACKHOLE Community Attached">
                 <t>
+                    Accepting and honoring the BLACKHOLE community,
+                    or ignoring it, is a choice that is left to each
+                    operator. This community MAY be used in all bilateral
+                    and multilateral BGP deployment scenarios. In a bilateral
+                    peering relationship, use of the BLACKHOLE community MUST
+                    be agreed upon by the two networks before advertising
+                    it. In a multilateral peering relationship, the decision
+                    to honor or ignore the BLACKHOLE community is to be
+                    made according to the operator's routing policy. The
+                    community SHOULD be ignored, if it is received by a
+                    network that it not using it.
+                </t>
+                <t>
                     When a network is under DDoS duress, it MAY announce
                     an IP prefix covering the victim's IP address(es)
                     for the purpose of signaling to neighboring networks
                     that any traffic destined for these IP address(es)
                     should be discarded. In such a scenario, the network
                     operator SHOULD attach the BLACKHOLE BGP community.
-                    This community MAY be used in all bilateral and
-                    multilateral BGP deployment scenarios.
                 </t>
                 <t>
                     The BLACKHOLE community MAY also be used as one of
@@ -226,7 +237,7 @@
                     a /128 for IPv6.
                 </t>
                 <t>
-                    BGP speakers in a direct peering relationship using
+                    BGP speakers in a bilateral peering relationship using
                     the BLACKHOLE community MUST only accept and honor BGP
                     announcements carrying the BLACKHOLE community, if the
                     announced prefix is covered by a shorter prefix that
