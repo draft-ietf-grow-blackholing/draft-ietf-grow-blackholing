@@ -237,14 +237,14 @@
                     a /128 for IPv6.
                 </t>
                 <t>
-                    BGP speakers in a bilateral peering relationship using
-                    the BLACKHOLE community MUST only accept and honor BGP
+                    BGP speakers in a bilateral peering relationship using the
+                    BLACKHOLE community MUST only accept and honor BGP
                     announcements carrying the BLACKHOLE community, if the
-                    announced prefix is covered by a shorter prefix that
-                    the neighboring network is authorized to advertise. In
+                    announced prefix is covered by an equal or shorter prefix
+                    that the neighboring network is authorized to advertise. In
                     topologies with a route server or other multilateral
-                    peering relationships, BGP speakers SHOULD accept and
-                    honor BGP announcements under the same conditions.
+                    peering relationships, BGP speakers SHOULD accept and honor
+                    BGP announcements under the same conditions.
                 </t>
                 <t>
                     The BLACKHOLE community is not intended to be used with
