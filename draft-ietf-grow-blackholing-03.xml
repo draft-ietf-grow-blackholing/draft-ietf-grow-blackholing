@@ -239,13 +239,20 @@
                 <t>
                     BGP speakers in a bilateral peering relationship using the
                     BLACKHOLE community MUST only accept and honor BGP
-                    announcements carrying the BLACKHOLE community, if the
-                    announced prefix is covered by an equal or shorter prefix
-                    that the neighboring network is authorized to advertise. In
-                    topologies with a route server or other multilateral
+                    announcements carrying the BLACKHOLE community under the
+                    two following conditions:
+
+                    <list style="symbols">
+                        <t>the announced prefix is covered by an equal or
+                            shorter prefix that the neighboring network is
+                            authorized to advertise.</t>
+                        <t>the receiving party agreed to honor the BLACKHOLE
+                            community on the particular BGP session</t>
+                    </list>
+
+                    In topologies with a route server or other multilateral
                     peering relationships, BGP speakers SHOULD accept and honor
-                    BGP announcements under the same conditions.
-                </t>
+                    BGP announcements under the same conditions.  </t>
                 <t>
                     The BLACKHOLE community is not intended to be used with
                     <xref target="RFC5575"/> NLRI to distribute traffic
