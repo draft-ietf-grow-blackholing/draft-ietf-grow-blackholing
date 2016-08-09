@@ -252,7 +252,13 @@
 
                     In topologies with a route server or other multilateral
                     peering relationships, BGP speakers SHOULD accept and honor
-                    BGP announcements under the same conditions.  </t>
+                    BGP announcements under the same conditions.
+                </t>
+                <t>
+                    An operator MUST ensure that origin validation techniques
+                    (such as <xref target="RFC6811" />) to not inadvertently block
+                    legitimate announcements carrying the BLACKHOLE community.
+                </t>
                 <t>
                     The BLACKHOLE community is not intended to be used with
                     <xref target="RFC5575"/> NLRI to distribute traffic
@@ -362,6 +368,7 @@
             <?rfc include="reference.RFC.5575"?>
             <?rfc include="reference.RFC.5635"?>
             <?rfc include="reference.RFC.6810"?>
+            <?rfc include="reference.RFC.6811"?>
             <?rfc include="reference.RFC.7454"?>
             <?rfc include="reference.I-D.ietf-sidr-bgpsec-protocol"?>
         </references>
