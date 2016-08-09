@@ -256,8 +256,9 @@
                 </t>
                 <t>
                     An operator MUST ensure that origin validation techniques
-                    (such as <xref target="RFC6811" />) to not inadvertently block
-                    legitimate announcements carrying the BLACKHOLE community.
+                    (such as <xref target="RFC6811" />) do not inadvertently
+                    block legitimate announcements carrying the BLACKHOLE
+                    community.
                 </t>
                 <t>
                     The BLACKHOLE community is not intended to be used with
