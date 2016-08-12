@@ -146,7 +146,7 @@
                 <list style='symbols'>
                     <t>Implementing and monitoring blackholing becomes easier
                         when implementation, and operational guides do not cover
-                        many options that trigger blackholing.
+                        many variations to trigger blackholing.
                     </t>
                     <t>The number of support requests from customers about how
                         to trigger blackholing in a particular neighboring
@@ -154,11 +154,6 @@
                         blackholing mechanisms is unified and well-known.
                     </t>
                 </list>
-            </t>
-
-            <t>
-                Making it considerably easier for network operators to utilize
-                blackholing makes operations easier.
             </t>
         </section>
 
