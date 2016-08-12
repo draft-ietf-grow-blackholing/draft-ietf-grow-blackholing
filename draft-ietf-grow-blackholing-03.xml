@@ -121,7 +121,7 @@
 
             <t>
                 DDoS attacks targeting a certain IP address may cause
-                congestion of links used to connect to other networks. In order
+                congestion of links used to connect to adjacent networks. In order
                 to limit the impact of such a scenario on legitimate traffic,
                 networks adopted a mechanism called BGP blackholing. A network
                 that wants to trigger blackholing needs to understand the
