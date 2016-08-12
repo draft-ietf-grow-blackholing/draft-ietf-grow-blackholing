@@ -98,7 +98,7 @@ Table of Contents
    mechanisms such as those described in [RFC3882] and [RFC5635].
 
    DDoS attacks targeting a certain IP address may cause congestion of
-   links used to connect to other networks.  In order to limit the
+   links used to connect to adjacent networks.  In order to limit the
    impact of such a scenario on legitimate traffic, networks adopted a
    mechanism called BGP blackholing.  A network that wants to trigger
    blackholing needs to understand the triggering mechanism adopted by
@@ -123,15 +123,12 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
    simplifies network operations because:
 
    o  Implementing and monitoring blackholing becomes easier when
-      implementation, and operational guides do not cover many options
-      that trigger blackholing.
+      implementation, and operational guides do not cover many
+      variations to trigger blackholing.
    o  The number of support requests from customers about how to trigger
       blackholing in a particular neighboring network will be reduced as
       the codepoint for common blackholing mechanisms is unified and
       well-known.
-
-   Making it considerably easier for network operators to utilize
-   blackholing makes operations easier.
 
 2.  BLACKHOLE Community
 
@@ -162,6 +159,9 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
    address(es) should be discarded.  In such a scenario, the network
    operator SHOULD attach the BLACKHOLE BGP community.
 
+   The BLACKHOLE community MAY also be used as one of the trigger
+   communities in a [RFC5635] destination-based RTBH configuration.
+
 
 
 
@@ -169,9 +169,6 @@ King, et al.            Expires February 13, 2017               [Page 3]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
-
-   The BLACKHOLE community MAY also be used as one of the trigger
-   communities in a [RFC5635] destination-based RTBH configuration.
 
 3.2.  Local Scope of Blackholes
 
@@ -218,6 +215,9 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
    The BLACKHOLE community is not intended to be used with [RFC5575]
    NLRI to distribute traffic flow specifications.
+
+
+
 
 
 
