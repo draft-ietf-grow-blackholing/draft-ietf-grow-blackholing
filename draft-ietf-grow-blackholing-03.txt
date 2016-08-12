@@ -5,13 +5,13 @@
 Network Working Group                                            T. King
 Internet-Draft                                                C. Dietzel
 Intended status: Informational                    DE-CIX Management GmbH
-Expires: February 12, 2017                                   J. Snijders
+Expires: February 13, 2017                                   J. Snijders
                                                                      NTT
                                                               G. Doering
                                                              SpaceNet AG
                                                               G. Hankins
                                                                    Nokia
-                                                         August 11, 2016
+                                                         August 12, 2016
 
 
                 BLACKHOLE BGP Community for Blackholing
@@ -48,12 +48,12 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on February 12, 2017.
+   This Internet-Draft will expire on February 13, 2017.
 
 
 
 
-King, et al.            Expires February 12, 2017               [Page 1]
+King, et al.            Expires February 13, 2017               [Page 1]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-King, et al.            Expires February 12, 2017               [Page 2]
+King, et al.            Expires February 13, 2017               [Page 2]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
@@ -165,7 +165,7 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
 
 
-King, et al.            Expires February 12, 2017               [Page 3]
+King, et al.            Expires February 13, 2017               [Page 3]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
@@ -221,7 +221,7 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
 
 
-King, et al.            Expires February 12, 2017               [Page 4]
+King, et al.            Expires February 13, 2017               [Page 4]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
@@ -263,10 +263,10 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
    modification of information by the forwarding agent.  This allows
    routing information to be modified, removed, or false information to
    be added by forwarding agents.  Recipients of routing information are
-   not able to detect this modification.  Also, RPKI [RFC6810] and
-   BGPSec [I-D.ietf-sidr-bgpsec-protocol] do not fully resolve this
-   situation.  For instance, BGP communities can still be added or
-   altered by a forwarding agent even if RPKI and BGPSec are in place.
+   not able to detect this modification.  BGPSec
+   [I-D.ietf-sidr-bgpsec-protocol] does not resolve this situation.
+   Even when BGPSec is in place, a forwarding agent can alter, add or
+   remove BGP communities.
 
    The unauthorized addition of the BLACKHOLE BGP community to an IP
    prefix by an adversary may cause a denial of service attack based on
@@ -277,7 +277,7 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
 
 
-King, et al.            Expires February 12, 2017               [Page 5]
+King, et al.            Expires February 13, 2017               [Page 5]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
@@ -333,7 +333,7 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
 
 
-King, et al.            Expires February 12, 2017               [Page 6]
+King, et al.            Expires February 13, 2017               [Page 6]
 
 Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
@@ -347,11 +347,6 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
               Filtering with Unicast Reverse Path Forwarding (uRPF)",
               RFC 5635, DOI 10.17487/RFC5635, August 2009,
               <http://www.rfc-editor.org/info/rfc5635>.
-
-   [RFC6810]  Bush, R. and R. Austein, "The Resource Public Key
-              Infrastructure (RPKI) to Router Protocol", RFC 6810,
-              DOI 10.17487/RFC6810, January 2013,
-              <http://www.rfc-editor.org/info/rfc6810>.
 
    [RFC6811]  Mohapatra, P., Scudder, J., Ward, D., Bush, R., and R.
               Austein, "BGP Prefix Origin Validation", RFC 6811,
@@ -382,18 +377,6 @@ Authors' Addresses
    Email: thomas.king@de-cix.net
 
 
-
-
-
-
-
-
-
-King, et al.            Expires February 12, 2017               [Page 7]
-
-Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
-
-
    Christoph Dietzel
    DE-CIX Management GmbH
    Lichtstrasse 43i
@@ -401,6 +384,14 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
    Germany
 
    Email: christoph.dietzel@de-cix.net
+
+
+
+
+
+King, et al.            Expires February 13, 2017               [Page 7]
+
+Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
 
    Job Snijders
@@ -445,4 +436,13 @@ Internet-Draft   BLACKHOLE BGP Community for Blackholing     August 2016
 
 
 
-King, et al.            Expires February 12, 2017               [Page 8]
+
+
+
+
+
+
+
+
+
+King, et al.            Expires February 13, 2017               [Page 8]

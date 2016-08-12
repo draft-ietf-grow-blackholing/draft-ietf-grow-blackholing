@@ -319,11 +319,9 @@
                 allows routing information to be modified, removed, or false
                 information to be added by forwarding agents. Recipients of
                 routing information are not able to detect this modification.
-                Also, <xref target="RFC6810">RPKI</xref> and <xref
-                    target="I-D.ietf-sidr-bgpsec-protocol">BGPSec</xref> do not
-                fully resolve this situation. For instance, BGP communities
-                can still be added or altered by a forwarding agent even if
-                RPKI and BGPSec are in place. 
+                <xref target="I-D.ietf-sidr-bgpsec-protocol">BGPSec</xref> does
+                not resolve this situation. Even when BGPSec is in place, a
+                forwarding agent can alter, add or remove BGP communities.
             </t>
             <t>
                 The unauthorized addition of the BLACKHOLE BGP community to an
@@ -368,7 +366,6 @@
             <?rfc include="reference.RFC.3882"?>
             <?rfc include="reference.RFC.5575"?>
             <?rfc include="reference.RFC.5635"?>
-            <?rfc include="reference.RFC.6810"?>
             <?rfc include="reference.RFC.6811"?>
             <?rfc include="reference.RFC.7454"?>
             <?rfc include="reference.I-D.ietf-sidr-bgpsec-protocol"?>
